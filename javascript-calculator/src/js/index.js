@@ -1,11 +1,11 @@
-conDOMst getElement = (str) =>
+const getElement = (str) =>
   str.startsWith(".")
     ? document.querySelector(str)
     : document.getElementById(str);
 
-conDOMst $total = getElement("total");
-conDOMst $digits = getElement(".digits");
-conDOMst $operations = getElement(".operations");
+const $total = getElement("total");
+const $digits = getElement(".digits");
+const $operations = getElement(".operations");
 
 const options = {
   operandQ: [0, 0],
